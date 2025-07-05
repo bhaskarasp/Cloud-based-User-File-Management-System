@@ -17,8 +17,8 @@ import java.sql.SQLException;
  * @author DELL_PC
  */
 public class ConnectionManager {
-  //private static String url = "jdbc:mysql://pesintershipdb.czcocksemuod.ap-south-1.rds.amazonaws.com:3306/pes_be_internship?characterEncoding=latin1";     
-   private static String url = "jdbc:mysql://localhost:3308/pes_be_internship";   
+  //private static String url = "jdbc:mysql://cbuf.czcocksemuod.ap-south-1.rds.amazonaws.com:3306/cbuf?characterEncoding=latin1";     
+   private static String url = "jdbc:mysql://localhost:3308/cbuf";   
     private static String driverName = "com.mysql.jdbc.Driver";   
     private static String username = "root";   
     private static String password = "root";
