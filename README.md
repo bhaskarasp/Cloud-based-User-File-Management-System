@@ -50,7 +50,27 @@ dbs.sql
 | Additional JARs     | See `libraries/` folder                |
 | HeidiSQL            | Optional, for inspecting SQLite DB     |
 
-**Note:** HeidiSQL is not required to run the app; it is used for database inspection and management.
+
+**Note:**
+- HeidiSQL is not required to run the app; it is used for database inspection and management.
+- If `rt.jar` is split into multiple parts due to file size limits, see the instructions below for recombining.
+
+### If rt.jar is split into parts
+
+If you receive `rt.jar` as multiple parts (e.g., `rt.zip.001`, `rt.zip.002`, etc.):
+
+1. Download all `rt.zip.001`, `rt.zip.002`, ... files to the same folder.
+2. Right-click the first part (`rt.zip.001`) and select **Extract here** using WinRAR, 7-Zip, or a similar tool.
+3. The tool will automatically combine the parts and extract the original `rt.jar` file.
+
+On Linux/macOS, you can also use the `cat` command to join parts (if split with `split`):
+
+```bash
+cat rt.zip.* > rt.zip
+unzip rt.zip
+```
+
+Then place the extracted `rt.jar` into the `libraries/` directory.
 
 ## Setup
 
